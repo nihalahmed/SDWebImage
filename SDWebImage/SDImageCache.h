@@ -48,9 +48,9 @@ typedef void(^SDWebImageQueryCompletedBlock)(UIImage *image, SDImageCacheType ca
 @property (assign, nonatomic) NSUInteger maxCacheSize;
 
 /**
- * If set to YES, last accessed date will be used when cleaning disk.
+ * If set to YES, last access date will be used when cleaning disk.
  */
-@property (assign, nonatomic) BOOL useLastAccessedDate;
+@property (assign, nonatomic) BOOL useLastAccessDate;
 
 /**
  * Returns global shared cache instance

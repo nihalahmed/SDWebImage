@@ -371,7 +371,7 @@ BOOL ImageDataHasPNGPreffix(NSData *data) {
         NSDate *expirationDate = [NSDate dateWithTimeIntervalSinceNow:-self.maxCacheAge];
         NSMutableDictionary *cacheFiles = [NSMutableDictionary dictionary];
         NSUInteger currentCacheSize = 0;
-        const NSString *dateKey = (self.useLastAccessedDate) ? NSURLContentAccessDateKey : NSURLContentModificationDateKey;
+        const NSString *dateKey = (self.useLastAccessDate) ? NSURLContentAccessDateKey : NSURLContentModificationDateKey;
 
         // Enumerate all of the files in the cache directory.  This loop has two purposes:
         //
