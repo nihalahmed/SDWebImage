@@ -15,7 +15,7 @@ static char operationArrayKey;
 @implementation UIImageView (WebCache)
 
 - (void)setImageWithURL:(NSURL *)url {
-    [self setImageWithURL:url imageManager:nil];
+    [self setImageWithURL:url placeholderImage:nil options:0 progress:nil imageManager:nil completed:nil];
 }
 
 - (void)setImageWithURL:(NSURL *)url imageManager:(SDWebImageManager *)imageManager {
@@ -23,7 +23,7 @@ static char operationArrayKey;
 }
 
 - (void)setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder {
-    [self setImageWithURL:url placeholderImage:placeholder imageManager:nil];
+    [self setImageWithURL:url placeholderImage:placeholder options:0 progress:nil imageManager:nil completed:nil];
 }
 
 - (void)setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder imageManager:(SDWebImageManager *)imageManager {

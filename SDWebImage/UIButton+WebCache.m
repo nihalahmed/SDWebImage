@@ -14,7 +14,7 @@ static char operationKey;
 @implementation UIButton (WebCache)
 
 - (void)setImageWithURL:(NSURL *)url forState:(UIControlState)state {
-    [self setImageWithURL:url forState:state imageManager:nil];
+    [self setImageWithURL:url forState:state placeholderImage:nil options:0 imageManager:nil completed:nil];
 }
 
 - (void)setImageWithURL:(NSURL *)url forState:(UIControlState)state imageManager:(SDWebImageManager *)imageManager {
@@ -22,7 +22,7 @@ static char operationKey;
 }
 
 - (void)setImageWithURL:(NSURL *)url forState:(UIControlState)state placeholderImage:(UIImage *)placeholder {
-    [self setImageWithURL:url forState:state placeholderImage:placeholder imageManager:nil];
+    [self setImageWithURL:url forState:state placeholderImage:placeholder options:0 imageManager:nil completed:nil];
 }
 
 - (void)setImageWithURL:(NSURL *)url forState:(UIControlState)state placeholderImage:(UIImage *)placeholder imageManager:(SDWebImageManager *)imageManager {
@@ -69,7 +69,7 @@ static char operationKey;
 }
 
 - (void)setBackgroundImageWithURL:(NSURL *)url forState:(UIControlState)state {
-    [self setBackgroundImageWithURL:url forState:state imageManager:nil];
+    [self setBackgroundImageWithURL:url forState:state placeholderImage:nil options:0 imageManager:nil completed:nil];
 }
 
 - (void)setBackgroundImageWithURL:(NSURL *)url forState:(UIControlState)state imageManager:(SDWebImageManager *)imageManager {
@@ -77,7 +77,7 @@ static char operationKey;
 }
 
 - (void)setBackgroundImageWithURL:(NSURL *)url forState:(UIControlState)state placeholderImage:(UIImage *)placeholder {
-    [self setBackgroundImageWithURL:url forState:state placeholderImage:placeholder imageManager:nil];
+    [self setBackgroundImageWithURL:url forState:state placeholderImage:placeholder options:0 imageManager:nil completed:nil];
 }
 
 - (void)setBackgroundImageWithURL:(NSURL *)url forState:(UIControlState)state placeholderImage:(UIImage *)placeholder imageManager:(SDWebImageManager *)imageManager {

@@ -14,7 +14,7 @@ static char operationKey;
 @implementation MKAnnotationView (WebCache)
 
 - (void)setImageWithURL:(NSURL *)url {
-    [self setImageWithURL:url imageManager:nil];
+    [self setImageWithURL:url placeholderImage:nil options:0 imageManager:nil completed:nil];
 }
 
 - (void)setImageWithURL:(NSURL *)url imageManager:(SDWebImageManager *)imageManager {
@@ -22,7 +22,7 @@ static char operationKey;
 }
 
 - (void)setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder {
-    [self setImageWithURL:url placeholderImage:placeholder imageManager:nil];
+    [self setImageWithURL:url placeholderImage:placeholder options:0 imageManager:nil completed:nil];
 }
 
 - (void)setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder imageManager:(SDWebImageManager *)imageManager {
